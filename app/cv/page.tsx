@@ -368,6 +368,71 @@ export default function CVPage() {
 
       <hr className="divider mb-12" />
 
+      {/* Selected Projects */}
+      <section className="mb-12">
+        <p className="section-label mb-8">Selected Projects</p>
+        <div className="space-y-4">
+          {[
+            {
+              title: "EcoHost CRM Platform",
+              tech: "Laravel · PHP · MySQL · Tailwind CSS",
+              year: "2025",
+              desc: "Full-stack CRM for EcoHost by EldoHub — service billing, support tickets, automated reminders, client portals, and 90+ client accounts.",
+            },
+            {
+              title: "AutoVault",
+              tech: "Laravel 12 · Livewire 3 · PHP · MySQL",
+              year: "2025",
+              desc: "WhatsApp-first car classifieds marketplace for Kenya. C2C platform with trust scoring, admin-gated listing approval, and subscription monetization.",
+            },
+            {
+              title: "Biz Mashinani Platform",
+              tech: "Laravel · PHP · MySQL · Tailwind CSS",
+              year: "2025",
+              desc: "Web platform for the Mastercard Foundation / EldoHub Biz Mashinani programme — participant management, reporting, and programme delivery across four counties.",
+              url: "https://bizmashinani.eldohub.co.ke/",
+            },
+            {
+              title: "CorpusFeed",
+              tech: "Laravel · PHP · MySQL · Tailwind CSS",
+              year: "2025",
+              desc: "Content aggregation and feed management platform — content ingestion, categorization, and delivery at scale.",
+              url: "https://test.corpusfeed.co.ke/",
+            },
+            {
+              title: "TechRun Event System",
+              tech: "Laravel · PHP · Tailwind CSS",
+              year: "2024",
+              desc: "Event management and athlete check-in platform built for TechRun and the Inclusive TechRun — registrations, bib assignment, and attendee management.",
+            },
+            {
+              title: "EldoHub Website (in progress)",
+              tech: "Laravel 12 · Filament CMS · PHP",
+              year: "Ongoing",
+              desc: "Custom CMS-driven website for EldoHub — editorial control for the team without requiring developer involvement for routine updates.",
+            },
+          ].map((p, i) => (
+            <div key={i} className="flex flex-col sm:flex-row sm:items-start justify-between p-5 rounded-sm border border-outline bg-surface gap-3">
+              <div className="flex-1">
+                <div className="flex items-center gap-2 flex-wrap mb-1">
+                  <h3 className="font-semibold text-t-primary font-[family-name:var(--font-space-grotesk)]">{p.title}</h3>
+                  {p.url && (
+                    <a href={p.url} target="_blank" rel="noopener noreferrer" className="text-xs text-accent hover:underline">
+                      ↗ live
+                    </a>
+                  )}
+                </div>
+                <p className="text-xs text-t-subtle mb-2">{p.tech}</p>
+                <p className="text-sm text-t-secondary leading-relaxed">{p.desc}</p>
+              </div>
+              <span className="text-xs text-t-subtle shrink-0 sm:mt-1">{p.year}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <hr className="divider mb-12" />
+
       {/* Skills */}
       <section className="mb-12">
         <p className="section-label mb-8">Skills</p>
