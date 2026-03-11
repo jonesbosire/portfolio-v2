@@ -132,6 +132,7 @@ export const programs: Program[] = [
     ],
     partners: ["EldoHub"],
     status: "completed",
+    image: "/images/programs/inclusive-techrun-1.jpg",
     images: [
       "/images/programs/inclusive-techrun-1.jpg",
       "/images/programs/inclusive-techrun-2.jpg",
@@ -168,6 +169,7 @@ export const programs: Program[] = [
     ],
     partners: ["EldoHub"],
     status: "active",
+    image: "/images/programs/techrun-1.jpg",
     images: [
       "/images/programs/techrun-1.jpg",
       "/images/programs/techrun-2.jpg",
@@ -204,6 +206,7 @@ export const programs: Program[] = [
     ],
     partners: ["World Bank", "Kenya Industrial Estates", "EldoHub"],
     status: "completed",
+    image: "/images/programs/miliki-1.jpg",
     images: [
       "/images/programs/miliki-1.jpg",
       "/images/programs/miliki-2.jpg",
@@ -244,6 +247,7 @@ export const programs: Program[] = [
     ],
     partners: ["Ministry of ICT Kenya", "GPSDD", "EldoHub"],
     status: "completed",
+    image: "/images/programs/strategy-townhall-1.jpg",
     images: [
       "/images/programs/strategy-townhall-1.jpg",
       "/images/programs/strategy-townhall-2.jpg",
@@ -345,6 +349,7 @@ export const programs: Program[] = [
     ],
     partners: ["EldoHub"],
     status: "completed",
+    image: "/images/programs/rwb-1.jpg",
     images: [
       "/images/programs/rwb-1.jpg",
       "/images/programs/rwb-2.jpg",
@@ -383,7 +388,11 @@ export const programs: Program[] = [
     ],
     partners: ["EldoHub"],
     status: "completed",
-    image: "https://placehold.co/1200x500/0d0d0d/22c55e?text=Kenya+Software+%26+AI+Summit&font=montserrat",
+    image: "/images/programs/ai-summit-1.jpg",
+    images: [
+      "/images/programs/ai-summit-1.jpg",
+      "/images/programs/ai-summit-2.jpg",
+    ],
   },
 
   {
@@ -418,6 +427,7 @@ export const programs: Program[] = [
     ],
     partners: ["EldoHub", "Moi University", "University of Eldoret"],
     status: "completed",
+    image: "/images/programs/athletics-1.jpg",
     images: [
       "/images/programs/athletics-1.jpg",
       "/images/programs/athletics-2.jpg",
@@ -455,7 +465,11 @@ export const programs: Program[] = [
     ],
     partners: ["Ministry of ICT Kenya", "DITIM", "EldoHub"],
     status: "completed",
-    image: "https://placehold.co/1200x500/0d0d0d/22c55e?text=Data+Governance+Townhall&font=montserrat",
+    image: "/images/programs/data-governance-1.jpg",
+    images: [
+      "/images/programs/data-governance-1.jpg",
+      "/images/programs/data-governance-2.jpg",
+    ],
   },
 ];
 
