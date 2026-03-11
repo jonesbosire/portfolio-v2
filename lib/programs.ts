@@ -103,6 +103,41 @@ export const programs: Program[] = [
   },
 
   {
+    slug: "biz-mashinani",
+    title: "Biz Mashinani",
+    tag: "Youth Employment",
+    organization: "Mastercard Foundation · EldoHub",
+    role: "Programme Implementer",
+    period: "2024 — 2025",
+    location: "4 Counties, Kenya",
+    category: "capacity-building",
+    summary:
+      "A 15-month Mastercard Foundation programme implemented by EldoHub to help financially disadvantaged young people build sustainable digital livelihoods. Part of the Young Africa Works strategy targeting 30 million young Africans by 2030.",
+    about: [
+      "Biz Mashinani is a 15-month collaborative programme designed to empower financially disadvantaged young people to build sustainable digital livelihoods. The programme is built on a simple but important principle: young people have potential, ideas, and the capability to create meaningful work. We work with them, not for them.",
+      "The programme is part of the Mastercard Foundation's Young Africa Works strategy, which aims to enable 30 million young Africans — particularly women — to access dignified and fulfilling work by 2030. EldoHub implements Biz Mashinani across four counties in Kenya's rural areas.",
+      "Participants build the skills, connections, and confidence needed to access real work — digital livelihoods, freelancing, micro-enterprise, and business creation. The focus is rural Kenya, where these pathways don't come handed to you.",
+    ],
+    impact: [
+      { value: "15 months", label: "Programme duration" },
+      { value: "4 counties", label: "Coverage area" },
+      { value: "Youth-led", label: "Participant focus" },
+      { value: "MCF", label: "Young Africa Works strategy" },
+    ],
+    highlights: [
+      "Implementing the Mastercard Foundation Biz Mashinani programme across 4 rural counties in Kenya",
+      "Supporting financially disadvantaged youth to build digital livelihoods and sustainable income streams",
+      "Working within the Young Africa Works strategy — 30 million young Africans targeted by 2030",
+      "Focusing on women and youth in rural areas where formal employment pathways are limited",
+      "Built and maintaining the Biz Mashinani web platform for programme delivery and participant tracking",
+      "Co-designing programme activities with participants — working with them, not for them",
+    ],
+    partners: ["Mastercard Foundation", "EldoHub"],
+    status: "active",
+    image: "/images/biz-mashinani.png",
+  },
+
+  {
     slug: "inclusive-techrun",
     title: "Inclusive TechRun",
     tag: "Sports & Assistive Tech",

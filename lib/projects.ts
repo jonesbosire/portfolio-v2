@@ -35,9 +35,9 @@ export const projects: Project[] = [
     image: "/images/autovault.png",
   },
   {
-    title: "Biz Mashinani",
+    title: "Biz Mashinani Platform",
     description:
-      "Business directory and SME support platform for grassroots entrepreneurs in Kenya. Helps small businesses get discovered and connect with customers and support networks.",
+      "Web platform for the Biz Mashinani programme — a 15-month Mastercard Foundation initiative implemented by EldoHub to empower financially disadvantaged youth to build digital livelihoods across four rural counties in Kenya.",
     tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS"],
     category: "Web Application",
     year: "2025",
