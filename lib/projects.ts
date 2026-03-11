@@ -32,7 +32,7 @@ export const projects: Project[] = [
     category: "Web Application",
     year: "2025",
     featured: true,
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=AutoVault&font=montserrat",
+    image: "/images/autovault.png",
   },
   {
     title: "Biz Mashinani",
@@ -74,7 +74,7 @@ export const projects: Project[] = [
     category: "Web Development",
     year: "2025",
     url: "https://eldwraps.limbaromana.co.ke/",
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=Eldoret+Wraps+%26+Tints&font=montserrat",
+    image: "/images/eldoret-wraps.jpg",
   },
   {
     title: "Sunset Serenity Beach Villas",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     tech: ["WordPress", "PHP", "Elementor"],
     category: "Web Development",
     year: "2023",
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=Sunset+Serenity&font=montserrat",
+    image: "/images/sunset-serenity.png",
   },
   {
     title: "Acacia School Eldoret",
