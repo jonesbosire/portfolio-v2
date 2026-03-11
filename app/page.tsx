@@ -62,6 +62,11 @@ export default function Home() {
           style={{ background: "radial-gradient(circle, var(--accent), transparent 70%)" }}
         />
 
+        {/* Galaxy ring — decorative, faded */}
+        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none opacity-[0.07]" aria-hidden="true">
+          <div className="galaxy-ring" />
+        </div>
+
         <div className="relative max-w-6xl mx-auto px-6 py-20 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
 
@@ -76,10 +81,8 @@ export default function Home() {
               </div>
 
               {/* Name */}
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-none mb-6">
-                <span className="text-t-primary">Jones</span>
-                <br />
-                <span className="gradient-text">Bosire</span>
+              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none mb-6">
+                <span className="text-t-primary">Jones </span><span className="gradient-text">Bosire</span>
               </h1>
 
               {/* Role tags */}

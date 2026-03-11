@@ -301,3 +301,57 @@ h1, h2, h3, h4, h5, h6 {
 .fade-up {
   animation: fadeUp 0.5s ease forwards;
 }
+
+/* ─────────────────────────────────────────────────
+   GALAXY RING — hero background decoration
+───────────────────────────────────────────────── */
+
+@keyframes galaxySpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes galaxySpinReverse {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.galaxy-ring {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.galaxy-ring::before,
+.galaxy-ring::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Outer slow ring */
+.galaxy-ring::before {
+  border: 1.5px solid transparent;
+  border-top-color: var(--accent);
+  border-right-color: var(--accent-2);
+  box-shadow:
+    0 0 40px 2px rgba(34, 197, 94, 0.15),
+    inset 0 0 40px 2px rgba(34, 197, 94, 0.08);
+  animation-name: galaxySpin;
+  animation-duration: 18s;
+}
+
+/* Inner faster ring */
+.galaxy-ring::after {
+  inset: 18%;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(34, 197, 94, 0.6);
+  border-left-color: rgba(6, 182, 212, 0.4);
+  box-shadow:
+    0 0 20px 1px rgba(6, 182, 212, 0.1);
+  animation-name: galaxySpinReverse;
+  animation-duration: 11s;
+}
