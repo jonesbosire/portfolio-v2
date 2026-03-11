@@ -68,15 +68,19 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 17px; /* base rem unit — scales all Tailwind rem sizes up */
+  font-size: 15px; /* base rem unit — scales all Tailwind rem sizes */
+}
+
+@media (min-width: 768px) {
+  html { font-size: 16px; }
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
-  font-size: 1.0625rem; /* 17px — comfortable reading size */
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Global grid */

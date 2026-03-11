@@ -48,7 +48,7 @@ export default function ContactPage() {
           style={{ background: "radial-gradient(circle, var(--accent), transparent)" }}
         />
         <p className="section-label mb-4">Let&apos;s talk</p>
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)] mb-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)] mb-4">
           Get in touch
         </h1>
         <p className="text-t-secondary max-w-xl leading-relaxed">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                   <p className="text-xs text-t-subtle uppercase tracking-widest font-semibold mb-1">
                     {c.label}
                   </p>
-                  <p className="text-t-primary font-medium font-[family-name:var(--font-space-grotesk)] group-hover:text-accent transition-colors">
+                  <p className="text-t-primary font-medium font-[family-name:var(--font-space-grotesk)] group-hover:text-accent transition-colors break-all">
                     {c.value}
                   </p>
                 </div>

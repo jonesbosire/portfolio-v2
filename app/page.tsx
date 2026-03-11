@@ -76,7 +76,7 @@ export default function Home() {
               </div>
 
               {/* Name */}
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-none mb-6">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-none mb-6">
                 <span className="text-t-primary">Jones</span>
                 <br />
                 <span className="gradient-text">Bosire</span>
@@ -114,7 +114,7 @@ export default function Home() {
                   style={{ background: "linear-gradient(135deg, var(--accent), #06b6d4)" }}
                 />
                 {/* Photo frame */}
-                <div className="relative w-72 md:w-80 lg:w-full lg:max-w-xs overflow-hidden rounded-sm border border-outline">
+                <div className="relative w-64 sm:w-72 md:w-80 lg:w-full lg:max-w-xs overflow-hidden rounded-sm border border-outline">
                   <Image
                     src="/jones.jpeg"
                     alt="Jones Bosire"
@@ -158,10 +158,10 @@ export default function Home() {
       </section>
 
       {/* ── SERVICES ─────────────────────────────────────── */}
-      <section className="py-24 max-w-6xl mx-auto px-6">
+      <section className="py-16 md:py-24 max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <p className="section-label mb-3">What I do</p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
             Skills & Services
           </h2>
         </div>
@@ -181,12 +181,12 @@ export default function Home() {
       </section>
 
       {/* ── PROGRAMMES ───────────────────────────────────── */}
-      <section className="py-24 border-t border-outline">
+      <section className="py-16 md:py-24 border-t border-outline">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
               <p className="section-label mb-3">The other half of the work</p>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
                 Development Programmes
               </h2>
             </div>
@@ -265,12 +265,12 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED PROJECTS ────────────────────────────── */}
-      <section className="py-24 border-t border-outline">
+      <section className="py-16 md:py-24 border-t border-outline">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
               <p className="section-label mb-3">What I&apos;ve built</p>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
                 Featured Projects
               </h2>
             </div>
@@ -324,12 +324,12 @@ export default function Home() {
       </section>
 
       {/* ── GALLERY — FROM THE FIELD ─────────────────────── */}
-      <section className="py-24 border-t border-outline">
+      <section className="py-16 md:py-24 border-t border-outline">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
               <p className="section-label mb-3">On the ground</p>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
                 From the field
               </h2>
             </div>
@@ -359,17 +359,14 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="text-t-subtle text-xs mt-4 text-center">
-            Replace placeholder images with your own photos from events and sessions.
-          </p>
         </div>
       </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
-      <section className="py-24 border-t border-outline">
+      <section className="py-16 md:py-24 border-t border-outline">
         <div className="max-w-6xl mx-auto px-6">
           <div
-            className="relative rounded-sm border border-outline p-12 md:p-16 overflow-hidden text-center"
+            className="relative rounded-sm border border-outline p-8 md:p-12 lg:p-16 overflow-hidden text-center"
             style={{ background: "var(--surface)" }}
           >
             <div
@@ -377,7 +374,7 @@ export default function Home() {
               style={{ background: "radial-gradient(ellipse 60% 80% at 50% 50%, var(--glow-color), transparent)" }}
             />
             <p className="section-label mb-4">Let&apos;s work together</p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-t-primary">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-4 text-t-primary">
               Have something that needs building?
             </h2>
             <p className="text-t-secondary max-w-md mx-auto mb-8 leading-relaxed">

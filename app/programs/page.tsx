@@ -23,7 +23,7 @@ export default function ProgramsPage() {
           style={{ background: "radial-gradient(circle, var(--accent), transparent)" }}
         />
         <p className="section-label mb-4">Beyond the code</p>
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)] mb-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)] mb-4">
           Development
           <br />
           Programmes

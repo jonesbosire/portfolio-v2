@@ -260,7 +260,7 @@ export default function CVPage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div>
           <p className="section-label mb-3">Online CV</p>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter font-[family-name:var(--font-space-grotesk)]">
             Jones Bosire
           </h1>
           <p className="text-t-secondary mt-2 text-lg">
