@@ -1,0 +1,299 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────
+   THEME VARIABLES
+   :root      = light theme
+   .dark      = dark theme
+───────────────────────────────────────────────── */
+
+:root {
+  --bg:          #f8f8f8;
+  --surface:     #ffffff;
+  --surface-2:   rgba(0, 0, 0, 0.03);
+  --border:      rgba(0, 0, 0, 0.09);
+  --text:        #111111;
+  --text-2:      #52525b;
+  --text-3:      #71717a;
+  --nav-bg:      rgba(248, 248, 248, 0.92);
+  --accent:      #16a34a;
+  --accent-2:    #22c55e;
+  --grid-line:   rgba(0, 0, 0, 0.05);
+  --glow-color:  rgba(22, 163, 74, 0.07);
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+}
+
+.dark {
+  --bg:          #000000;
+  --surface:     rgba(255, 255, 255, 0.03);
+  --surface-2:   rgba(255, 255, 255, 0.06);
+  --border:      rgba(255, 255, 255, 0.08);
+  --text:        #ffffff;
+  --text-2:      #a1a1aa;
+  --text-3:      #71717a;
+  --nav-bg:      rgba(0, 0, 0, 0.85);
+  --accent:      #22c55e;
+  --accent-2:    #4ade80;
+  --grid-line:   rgba(255, 255, 255, 0.04);
+  --glow-color:  rgba(34, 197, 94, 0.06);
+}
+
+/* ─────────────────────────────────────────────────
+   TAILWIND DESIGN TOKENS
+   Available as utility classes across JSX:
+   text-t-primary, text-t-secondary, text-t-subtle,
+   bg-surface, bg-surface-2, border-outline,
+   bg-base, text-accent, text-accent-2
+───────────────────────────────────────────────── */
+
+@theme inline {
+  --color-t-primary:   var(--text);
+  --color-t-secondary: var(--text-2);
+  --color-t-subtle:    var(--text-3);
+  --color-surface:     var(--surface);
+  --color-surface-2:   var(--surface-2);
+  --color-outline:     var(--border);
+  --color-base:        var(--bg);
+  --color-accent:      var(--accent);
+  --color-accent-2:    var(--accent-2);
+  --font-heading: var(--font-space-grotesk);
+  --font-sans:    var(--font-dm-sans);
+}
+
+/* ─────────────────────────────────────────────────
+   BASE STYLES
+───────────────────────────────────────────────── */
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px; /* base rem unit — scales all Tailwind rem sizes up */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-dm-sans), "DM Sans", system-ui, sans-serif;
+  font-size: 1.0625rem; /* 17px — comfortable reading size */
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Global grid */
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cursor spotlight — follows mouse via JS CursorSpotlight component */
+body::before {
+  content: '';
+  position: fixed;
+  top: var(--cursor-y, 50vh);
+  left: var(--cursor-x, 50vw);
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, var(--glow-color) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+  transition: top 0.1s ease, left 0.1s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), "Space Grotesk", system-ui, sans-serif;
+}
+
+/* ─────────────────────────────────────────────────
+   HERO GRID OVERLAY (stronger than body grid)
+───────────────────────────────────────────────── */
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.dark .grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+.light .grid-bg,
+:root:not(.dark) .grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.07) 1px, transparent 1px);
+}
+
+.grid-fade {
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+}
+
+/* ─────────────────────────────────────────────────
+   GRADIENT TEXT (hero name, section accents)
+───────────────────────────────────────────────── */
+
+.gradient-text {
+  background: linear-gradient(135deg, #4ade80 0%, #22c55e 45%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Slightly richer gradient for light mode */
+.light .gradient-text,
+:root:not(.dark) .gradient-text {
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─────────────────────────────────────────────────
+   CARD
+───────────────────────────────────────────────── */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: rgba(34, 197, 94, 0.35);
+  background: var(--surface-2);
+}
+
+/* Subtle shadow in light mode */
+:root:not(.dark) .card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+:root:not(.dark) .card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ─────────────────────────────────────────────────
+   TAGS / PILLS
+───────────────────────────────────────────────── */
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.625rem;
+  border-radius: 2px;
+  background: rgba(34, 197, 94, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  display: inline-block;
+}
+
+.tag-white {
+  background: var(--surface-2);
+  color: var(--text-2);
+  border-color: var(--border);
+}
+
+/* ─────────────────────────────────────────────────
+   SECTION LABEL
+───────────────────────────────────────────────── */
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────────
+   BUTTONS
+───────────────────────────────────────────────── */
+
+.btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  transition: background 0.15s ease, transform 0.15s ease;
+  text-decoration: none;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+.btn-accent:hover {
+  background: var(--accent-2);
+  transform: translateY(-1px);
+}
+
+/* Button text stays white on green bg — override needed for light mode text */
+:root:not(.dark) .btn-accent {
+  color: #ffffff;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  transition: border-color 0.15s ease, background 0.15s ease;
+  text-decoration: none;
+  font-family: var(--font-space-grotesk), system-ui, sans-serif;
+}
+
+.btn-ghost:hover {
+  border-color: var(--text-2);
+  background: var(--surface-2);
+}
+
+/* ─────────────────────────────────────────────────
+   DIVIDER
+───────────────────────────────────────────────── */
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* ─────────────────────────────────────────────────
+   ANIMATIONS
+───────────────────────────────────────────────── */
+
+@keyframes ping {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.dot-pulse {
+  animation: ping 2s ease-in-out infinite;
+}
+
+/* Page-level fade in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeUp 0.5s ease forwards;
+}
