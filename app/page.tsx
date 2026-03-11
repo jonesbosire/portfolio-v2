@@ -63,7 +63,7 @@ export default function Home() {
         />
 
         {/* Galaxy ring — decorative, faded */}
-        <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none opacity-[0.07]" aria-hidden="true">
+        <div className="absolute right-[-8%] top-1/2 -translate-y-1/2 w-[560px] h-[560px] pointer-events-none opacity-[0.18]" aria-hidden="true">
           <div className="galaxy-ring" />
         </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
               </div>
 
               {/* Name */}
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-none mb-6">
+              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-8xl font-bold tracking-tighter leading-none mb-6 whitespace-nowrap">
                 <span className="text-t-primary">Jones </span><span className="gradient-text">Bosire</span>
               </h1>
 
