@@ -54,7 +54,7 @@ export const projects: Project[] = [
     year: "2025",
     featured: true,
     url: "https://test.corpusfeed.co.ke/",
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=CorpusFeed&font=montserrat",
+    image: "/images/corpus-feed.jpg",
   },
   {
     title: "TechRun & Inclusive TechRun Event",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     tech: ["HTML", "CSS", "PHP"],
     category: "Web Development",
     year: "2022",
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=Acacia+School&font=montserrat",
+    image: "/images/acacia-school.jpg",
   },
   {
     title: "Central Primary School",
@@ -101,6 +101,6 @@ export const projects: Project[] = [
     tech: ["WordPress"],
     category: "Web Development",
     year: "2022",
-    image: "https://placehold.co/800x450/0d0d0d/22c55e?text=Central+Primary&font=montserrat",
+    image: "/images/central-primary.png",
   },
 ];
