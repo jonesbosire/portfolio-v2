@@ -309,7 +309,7 @@ export default function Home() {
       </section>
 
       {/* ── GALLERY — FROM THE FIELD ─────────────────────── */}
-      <section className="py-16 md:py-24 border-t border-outline">
+      {/* <section className="py-16 md:py-24 border-t border-outline">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-end justify-between mb-12">
             <div>
@@ -345,7 +345,7 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="py-16 md:py-24 border-t border-outline">
