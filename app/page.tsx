@@ -214,11 +214,6 @@ export default function Home() {
                         unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                      <div className="absolute top-3 left-3"><span className="tag">{prog.tag}</span></div>
-                      <div className="absolute top-3 right-3 flex items-center gap-1.5 text-xs text-green-400 bg-black/60 px-2 py-0.5 rounded-sm">
-                        <span className="w-1.5 h-1.5 rounded-full bg-green-500 dot-pulse" />
-                        Active
-                      </div>
                     </div>
                     <div className="p-5">
                       <h3 className="font-semibold text-t-primary mb-1 group-hover:text-accent transition-colors">{prog.title}</h3>
@@ -245,8 +240,6 @@ export default function Home() {
                       unoptimized
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-                    <div className="absolute top-3 left-3"><span className="tag tag-white">{prog.tag}</span></div>
-                    <span className="absolute top-3 right-3 text-xs text-white/60 bg-black/60 px-2 py-0.5 rounded-sm">{prog.period}</span>
                   </div>
                   <div className="p-5">
                     <h3 className="font-semibold text-t-primary mb-1 group-hover:text-accent transition-colors">{prog.title}</h3>
@@ -291,14 +284,6 @@ export default function Home() {
                     unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute top-3 left-3">
-                    <span className="tag tag-white">{p.category}</span>
-                  </div>
-                  {p.year && (
-                    <span className="absolute top-3 right-3 text-xs text-white/70 bg-black/60 px-2 py-0.5 rounded-sm">
-                      {p.year}
-                    </span>
-                  )}
                 </div>
                 <div className="p-5">
                   <h3 className="font-semibold text-t-primary text-lg mb-2 group-hover:text-accent transition-colors">

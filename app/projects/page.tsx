@@ -79,18 +79,6 @@ function ProjectCard({ project }: { project: (typeof projects)[0] }) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
 
-        {/* Overlaid badges */}
-        <div className="absolute top-3 left-3 flex gap-2">
-          <span className="tag tag-white">{project.category}</span>
-          {project.featured && (
-            <span className="tag">Featured</span>
-          )}
-        </div>
-        {project.year && (
-          <span className="absolute top-3 right-3 text-xs text-t-secondary bg-black/60 px-2 py-0.5 rounded-sm">
-            {project.year}
-          </span>
-        )}
       </div>
 
       {/* Content */}

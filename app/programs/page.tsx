@@ -100,19 +100,6 @@ function ProgramCard({ program }: { program: (typeof programs)[0] }) {
           unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-        <div className="absolute top-3 left-3 flex items-center gap-2">
-          <span className={`tag ${isActive ? "" : "tag-white"}`}>{program.tag}</span>
-        </div>
-        {isActive ? (
-          <div className="absolute top-3 right-3 flex items-center gap-1.5 text-xs text-emerald-400 bg-black/60 px-2 py-0.5 rounded-sm">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 dot-pulse" />
-            Active
-          </div>
-        ) : (
-          <span className="absolute top-3 right-3 text-xs text-t-secondary bg-black/60 px-2 py-0.5 rounded-sm">
-            {program.period}
-          </span>
-        )}
       </div>
 
       {/* Content */}
