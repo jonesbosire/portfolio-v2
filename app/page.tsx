@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { programs } from "@/lib/programs";
 import { projects } from "@/lib/projects";
+import { certificates } from "@/lib/certificates";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import Marquee from "@/components/Marquee";
 
@@ -349,6 +350,48 @@ export default function Home() {
 
         </div>
       </section> */}
+
+      {/* ── CERTIFICATES ─────────────────────────────────── */}
+      <section className="py-16 md:py-24 border-t border-outline">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <p className="section-label mb-3">Credentials</p>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-t-primary">
+                Certifications
+              </h2>
+            </div>
+            <Link href="/certificates" className="hidden md:inline-flex text-sm text-t-secondary hover:text-accent transition-colors">
+              All certificates →
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {certificates.slice(0, 6).map((cert, i) => (
+              <Link
+                key={i}
+                href="/certificates"
+                className="card rounded-sm p-5 group block"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-accent text-sm shrink-0 mt-0.5">◈</span>
+                  <div>
+                    <p className="text-xs text-accent uppercase tracking-widest font-semibold mb-1">{cert.category}</p>
+                    <p className="text-sm font-semibold text-t-primary group-hover:text-accent transition-colors leading-snug mb-1 font-[family-name:var(--font-space-grotesk)]">
+                      {cert.name}
+                    </p>
+                    <p className="text-xs text-t-subtle">{cert.issuer} · {cert.year}</p>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-6 md:hidden">
+            <Link href="/certificates" className="btn-ghost w-full justify-center">All certificates →</Link>
+          </div>
+        </div>
+      </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="py-16 md:py-24 border-t border-outline">

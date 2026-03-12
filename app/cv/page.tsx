@@ -484,7 +484,12 @@ export default function CVPage() {
 
       {/* Certifications */}
       <section className="mb-12">
-        <p className="section-label mb-8">Certifications</p>
+        <div className="flex items-center justify-between mb-8">
+          <p className="section-label">Certifications</p>
+          <Link href="/certificates" className="text-xs text-accent hover:underline">
+            View certificates →
+          </Link>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {certifications.map((c, i) => (
             <div
@@ -537,6 +542,9 @@ export default function CVPage() {
         </Link>
         <Link href="/programs" className="btn-ghost">
           View programmes
+        </Link>
+        <Link href="/certificates" className="btn-ghost">
+          View certificates
         </Link>
       </div>
     </div>
