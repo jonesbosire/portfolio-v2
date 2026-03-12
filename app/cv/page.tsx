@@ -124,6 +124,18 @@ const experience = [
     ],
   },
   {
+    role: "Programme Coordinator — Data Governance & AgriTech Workshop",
+    org: "ESTDEV · GIZ · Expertise France · EldoHub",
+    period: "2025",
+    type: "completed",
+    points: [
+      "Coordinated a two-day Data Governance & AgriTech workshop for 30 CBO members from five Kenyan counties, part of the EU-funded Data Governance in Africa Initiative",
+      "Managed programme operations: session design, communications, facilitation support, and documentation throughout the workshop",
+      "Applied the GROW methodology to guide participants from data literacy basics to designing their own community digital pilots",
+      "Partnered with ESTDEV, GIZ, Expertise France, KSA, and KALRO on programme delivery",
+    ],
+  },
+  {
     role: "Entrepreneurship Coach — Ajira Poa Project",
     org: "Danish Church Aid (DCA) · EldoHub",
     period: "2024",

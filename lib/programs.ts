@@ -506,6 +506,44 @@ export const programs: Program[] = [
       "/images/programs/data-governance-2.jpg",
     ],
   },
+
+  {
+    slug: "data-governance-agritech-workshop",
+    title: "Data Governance & AgriTech Workshop",
+    tag: "AgriTech · Data Governance",
+    organization: "ESTDEV · GIZ · Expertise France · EldoHub",
+    role: "Programme Coordinator & Facilitation Support",
+    period: "Early 2025",
+    location: "Eldoret, Kenya",
+    category: "capacity-building",
+    summary:
+      "A two-day Data Governance & AgriTech workshop bringing together 30 community-based organisations (CBOs) from five Kenyan counties, part of the EU-funded Data Governance in Africa Initiative. I coordinated the programme, supported facilitation, managed session flow, and handled communications.",
+    about: [
+      "The Data Governance in Africa Initiative is funded by the European Union under the Global Gateway strategy and jointly implemented by ESTDEV, GIZ, HAUS, Expertise France, Enabel, and Digital Africa. The initiative builds inclusive digital ecosystems across Africa that uphold data rights, foster innovation, and promote sustainable development.",
+      "In early 2025, Eldohub hosted a two-day Data Governance & AgriTech workshop in Eldoret as part of this initiative. Thirty members of community-based organisations (CBOs) from five Kenyan counties participated, alongside presentations from the Kenya Space Agency (KSA) and the Kenya Agricultural and Livestock Research Organization (KALRO).",
+      "The workshop addressed a practical problem: farmers and CBOs already collect data — on crop yields, livestock health, market prices, and weather — but often lack the frameworks to store it, analyse it, or turn it into decisions. Topics covered included data visualisation for farming, precision agriculture using drones, data protection, ethical data collection, and building climate-resilient agritech systems.",
+      "We used the GROW methodology to guide participants through identifying challenges, analysing root causes, and designing practical solutions grounded in what they already knew. The workshop deliberately avoided drowning participants in technical language — the goal was confidence, not complexity.",
+      "Participants left with clearer understanding of data flows, ethical data handling, and how technology can extend community knowledge rather than replace it. They built new networks and left with small digital pilots they committed to launching in their home counties. Follow-up county-level engagements, co-designed AgriTech pilots, and simplified toolkits are in development.",
+      "My role sat at the centre of programme operations: I handled coordination, communications, session design support, documentation, and making sure the training experience felt practical and grounded in the real conditions of the CBOs we worked with.",
+    ],
+    impact: [
+      { value: "30", label: "CBOs represented" },
+      { value: "5", label: "Counties covered" },
+      { value: "2 days", label: "Workshop duration" },
+      { value: "EU-funded", label: "Global Gateway Initiative" },
+    ],
+    highlights: [
+      "Coordinated the full two-day Data Governance & AgriTech workshop on behalf of EldoHub",
+      "Supported facilitation and session flow using the GROW methodology",
+      "Managed communications and documentation throughout the workshop",
+      "30 CBO members from five counties engaged on data governance, drone farming, and digital literacy",
+      "Partnered with ESTDEV, GIZ, Expertise France, KSA, and KALRO on programme delivery",
+      "Contributed to a mindset shift — participants left designing their own community digital pilots",
+      "Part of the EU-funded Data Governance in Africa Team Europe Initiative",
+    ],
+    partners: ["ESTDEV", "GIZ", "Expertise France", "Enabel", "Digital Africa", "Kenya Space Agency", "KALRO", "EldoHub"],
+    status: "completed",
+  },
 ];
 
 export function getProgramBySlug(slug: string): Program | undefined {
