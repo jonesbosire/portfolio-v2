@@ -44,14 +44,6 @@ export default function CertificatesPage() {
         );
       })}
 
-      {/* Upload note */}
-      <div className="mt-8 p-5 rounded-sm border border-outline bg-surface">
-        <p className="text-xs font-semibold tracking-widest text-t-subtle uppercase mb-2">Adding a certificate</p>
-        <p className="text-sm text-t-secondary leading-relaxed">
-          Drop the PDF into <code className="bg-surface-2 px-1.5 py-0.5 rounded text-accent text-xs">/public/certificates/</code> then set the <code className="bg-surface-2 px-1.5 py-0.5 rounded text-accent text-xs">file</code> field in <code className="bg-surface-2 px-1.5 py-0.5 rounded text-accent text-xs">lib/certificates.ts</code>. The card will automatically show a live preview.
-        </p>
-      </div>
-
       <div className="mt-8 flex gap-4">
         <Link href="/cv" className="btn-ghost">← Back to CV</Link>
       </div>
