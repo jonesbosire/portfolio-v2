@@ -46,6 +46,15 @@ export const projects: Project[] = [
     image: "/images/biz-mashinani.png",
   },
   {
+    title: "HALI Access Partner Portal",
+    description:
+      "Private, invite-only web platform for the HALI Access Network — a pan-African network connecting 40+ organisations across 15+ African countries that expand access to quality education in Sub-Saharan Africa. The portal is the digital headquarters for the network: member directory, events with capacity control, content hub, opportunities board, resource library, in-portal notifications, and a full Secretariat admin panel with role-based access control.",
+    tech: ["Laravel 12", "Livewire 3", "Alpine.js", "PHP 8.3", "MySQL", "Tailwind CSS", "Vite"],
+    category: "Web Application",
+    year: "2025",
+    featured: true,
+  },
+  {
     title: "CorpusFeed",
     description:
       "Content aggregation and feed management platform. Handles content ingestion, categorization, and delivery — built for scale and editorial control.",
